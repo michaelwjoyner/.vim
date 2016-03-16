@@ -24,6 +24,7 @@ if has("user_commands")
   " Add extra bundles here...
   " Bundle 'reponame'
   Bundle 'jpo/vim-railscasts-theme'
+  Plugin 'vim-airline/vim-airline-themes'
 
 endif
 
@@ -38,7 +39,7 @@ set shiftwidth=2  " Set the default shift width for indents
 set expandtab     " Make tabs into spaces (set by tabstop)
 set smarttab      " Smarter tab levels
 set mouse=v
-set nonumber      " Line numbers offV                       "
+set nonumber      " Line numbers off
 
 let g:airline_powerline_fonts = 1
 let g:NERDTreeShowHidden = 1
