@@ -31,9 +31,25 @@ endif
 let g:dotvim_colorscheme = 'railscasts'
 
 " Customize to your needs...
-map <C-w> :NERDTreeTabsToggle<CR>
 colo railscasts
-set tabstop=2
-set shiftwidth=2
-set expandtab
+set tabstop=2     " Set the default tabstop
+set softtabstop=2
+set shiftwidth=2  " Set the default shift width for indents
+set expandtab     " Make tabs into spaces (set by tabstop)
+set smarttab      " Smarter tab levels
 set mouse=v
+set nonumber      " Line numbers offV                       "
+
+let g:airline_powerline_fonts = 1
+let g:NERDTreeShowHidden = 1
+
+" Key mappings
+map <C-w> :NERDTreeTabsToggle<CR>
+
+
+
+
+
+
+
+
