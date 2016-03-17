@@ -40,17 +40,31 @@ set expandtab     " Make tabs into spaces (set by tabstop)
 set smarttab      " Smarter tab levels
 set mouse=v
 set nonumber      " Line numbers off
+set timeoutlen=50 " Annoying delay in status bar
 
 let g:airline_powerline_fonts = 1
 let g:NERDTreeShowHidden = 1
+let g:ctrlp_cmd = 'CtrlPMRU'
+
 
 " Key mappings
-map <C-w> :NERDTreeTabsToggle<CR>
+normal copy/paste
+vmap <C-c> y<Esc>i
+vmap <C-x> d<Esc>i
+imap <C-v> <Esc>pi
+imap <C-y> <Esc>ddi
 
-
-
-
-
-
-
+" shift+arrow selection
+nmap <S-Up> v<Up>
+nmap <S-Down> v<Down>
+nmap <S-Left> v<Left>
+nmap <S-Right> v<Right>
+vmap <S-Up> <Up>
+vmap <S-Down> <Down>
+vmap <S-Left> <Left>
+vmap <S-Right> <Right>
+imap <S-Up> <Esc>v<Up>
+imap <S-Down> <Esc>v<Down>
+imap <S-Left> <Esc>v<Left>
+imap <S-Right> <Esc>v<Right>
 
